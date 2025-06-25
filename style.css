@@ -6,7 +6,71 @@
 }
 /* Boilerplate code end*/
 
-/* root element basic css start */
+/* Basic css start */
 :root{
-    
+    --common-width:90%;
+    --color-bg:rgb(28, 25, 25);
+}
+
+.app-container{
+    height: 100vh;
+}
+
+/* header css start */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav{
+    width: var(--common-width);
+    padding: 20px 0 !important;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand>i{
+    font-size: 30px;
+}
+
+.navbar-brand>span{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-bg);
+    letter-spacing: 2px;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    column-gap: clamp(8px,2%,20px);
+}
+.navbar-nav a{
+    color: var(--color-bg);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-nav a:hover{
+    color: red;
+    background-color: rgb(185, 186, 187);
+}
+
+.toggler>i{
+    font-size: 26px;
+    cursor: pointer;
 }
