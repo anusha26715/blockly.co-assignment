@@ -1,0 +1,76 @@
+/* main css styling start */
+
+.home-ctnr{
+    padding: 8% 12%;
+}
+
+.home-context>h1>span{
+    text-decoration: underline;
+    color: var(--color-grey);
+}
+
+.home-context>span{
+    display: inline-block;
+    background: linear-gradient(to right,rgb(0, 255, 251),grey);
+    border-radius: 20px 20px 20px 0;
+    padding: 4px 26px;
+    font-size: 20px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.home-context>p{
+    color: var(--color-grey);
+    font-size: 18px;
+}
+
+
+.btn-container{
+    display: flex;
+    column-gap: 25px;
+}
+
+.bttn{
+    color: var(--color-white);
+    font-weight: 600;
+    border: 2px solid var(--color-white);
+    box-shadow: 0 0 5px grey;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.download-btn{
+    background: linear-gradient(to left,orange,red);
+}
+
+.touch-btn{
+    background: linear-gradient(to left, black,gray);
+}
+
+
+.image-cntr {
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  box-shadow: 0 0 56px var(--color-grey);
+  margin: auto;
+  background-color: var(--color-yellow);
+  border-radius: 40% 40% 60% 30%/45% 40% 75% 70%;
+}
+
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (min-width:500px) {
+    .navbar-brand>span{
+        letter-spacing: 2px;
+        font-size: 100%;
+    }
+}
