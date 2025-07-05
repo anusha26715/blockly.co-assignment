@@ -1,0 +1,154 @@
+/* Boilerplate code start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Boilerplate code end*/
+
+/* Basic css start */
+:root{
+    --common-width:90%;
+    --color-grey:grey;
+    --color-white:#ffffff;
+    --color-bg:rgb(28, 25, 25);
+    --color-yellow:yellow;
+}
+/* Basic css end */
+
+/* Light theme is default */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.dark-mode .navbar {
+  background-color: #101010;
+}
+
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar-toggler>i,
+.dark-mode .navbar-brand,
+.dark-mode .navbar-brand>span,
+.dark-mode .social-links i,
+.dark-mode .social-links a,
+.dark-mode .mail,
+.dark-mode p>strong {
+  transition: all 0.3s ease-in-out;
+  color: #f5f5f5 !important;
+  border-color: #f5f5f5 !important;
+  outline-color: #f5f5f5 !important;
+}
+
+.dark-mode p{
+    color:rgb(198, 195, 195);
+}
+
+
+.app-container{
+    height: 100vh;
+    position: relative;
+}
+
+/* header css start */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav{
+    width: var(--common-width);
+    padding: 20px 0 !important;
+    position: relative;
+}
+
+.navbar-brand{
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-brand>i{
+    font-size: 30px;
+}
+
+.navbar-brand>span{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-bg);
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    column-gap: clamp(8px,2%,20px);
+}
+.navbar-nav a{
+    color: var(--color-bg);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-nav a:hover{
+    color: red;
+    background-color: rgba(236, 239, 241,0.5);
+}
+
+.toggler>i{
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* header section css styling end */
+
+/* social links css styling start */
+.social-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: absolute;
+    left: 6%;
+    bottom: 100px;
+}
+.social-links i{
+    color: var(--color-bg);
+    font-size: 16px;
+}
+
+.social-links>a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--color-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.mail{
+    font-weight: 600;
+    border-left: 5px solid var(--color-bg);
+    padding: 3px 0 3px 50px;
+    position: absolute;
+    right: -120px;
+    top: 500px;
+    transform: rotate(270deg);
+}
+
+/* social links css styling end */
